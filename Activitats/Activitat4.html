@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title></title>
+			<script src="../jquery-3.4.1.js"></script>
+		</head>
+		<body>
+			<script>
+
+				var num=0, prod=0, total=0;
+
+				$(document).ready(function(){
+
+					$("table#t1 tr").click(function () {
+						$(this).css("background-color","#ffff00");
+					});
+
+					$("table#t2 tr").click(function () {
+						$(this).css("font-size","26px");
+					});
+				});
+			</script>
+			<table border="1" id="t1">
+				<tr>
+					<td>
+						buenas
+					</td>
+				</tr>
+				<tr>
+					<td>
+						tardes
+					</td>
+				</tr>
+				<tr>
+					<td>
+						tardes
+					</td>
+				</tr>
+			</table>
+			<br>
+			<table border="1" id="t2">
+				<tr>
+					<td>
+						tardes
+					</td>
+				</tr>
+				<tr>
+					<td>
+						buenas
+					</td>
+				</tr>
+				<tr>
+					<td>
+						tardes
+					</td>
+				</tr>
+			</table>
+		</body>
+	</html>

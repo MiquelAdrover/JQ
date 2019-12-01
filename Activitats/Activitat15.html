@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title></title>
+			<script src="../jquery-3.4.1.js"></script>
+			<style type="text/css">
+				div{
+					background: #fa0;
+					width: 800px;
+					height: 70px;
+				}
+			</style>
+		</head>
+		<body>
+			<script>
+				$(document).ready(function(){
+
+					$("div").dblclick(function(){
+						$(this).css("width", "250px");
+						$(this).css("height","250px");
+					});
+
+					$("div").click(function(){
+						$(this).css("width", "800px");
+						$(this).css("height","70px");
+					});
+				});
+			</script>
+			<div></div>
+		</body>
+	</html>

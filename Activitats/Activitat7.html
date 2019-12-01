@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title></title>
+			<script src="../jquery-3.4.1.js"></script>
+		</head>
+		<body>
+			<script>
+
+				var x;
+
+				$(document).ready(function(){
+
+					$("#b1").click(function () {
+						x=$("#e1");
+						x.attr("href", "https://www.facebook.com/?ref=logo");
+					});
+
+					$("#b2").click(function () {
+						x=$("#e1");
+						x.attr("href", "https://aulavirtual.caib.es/c07002208/course/index.php?categoryid=17");
+					});
+
+					$("#b3").click(function () {
+						x=$("#e1");
+						x.attr("href", "https://app.instagantt.com/r#projects/5da89c1720306f1b2f3753ad/1145393752028700");
+					});
+				});	
+			</script>
+			<a href="https://www.youtube.com/" id="e1">Aixo es un super enllaç</a><br>
+			<button type="button" id="b1">Primer Enllaç</button>
+			<button type="button" id="b2">Segon Enllaç</button>
+			<button type="button" id="b3">Tercer Enllaç</button>
+		</body>
+	</html>

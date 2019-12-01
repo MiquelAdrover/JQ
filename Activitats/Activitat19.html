@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title></title>
+			<script src="../jquery-3.4.1.js"></script>
+			<style type="text/css">
+				textarea{
+					font-size: 20px;
+					width: 200px;
+					height: 100px;
+				}
+
+				#amagat {
+					display: none;
+				}
+			</style>
+		</head>
+		<body>
+			<div id="amagat"> ESTAVA AMAGAT PEO ARA SURT</div>
+			<div id="d1">
+				<h1>Escriba su opinion</h1>
+				
+				<textarea></textarea>
+				<br>
+				<button id="b1">Enviar</button>
+			</div>
+			<button id="b2">Volver a ensenyar</button>
+			<script>
+			$(document).ready(function(){
+				
+				$("#d1").click(function(){
+					$(this).hide(3000, function(){
+						$("#amagat").show(3000);
+					});
+					
+				});
+			});
+			</script>
+		</body>
+</html>

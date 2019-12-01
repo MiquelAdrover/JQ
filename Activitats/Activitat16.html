@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title></title>
+			<script src="../jquery-3.4.1.js"></script>
+			<style type="text/css">
+				input{
+					font-size: 20px;
+					width: 100px;
+					height: 100px;
+				}
+			</style>
+		</head>
+		<body>
+			<script>
+				$(document).ready(function(){
+
+					$("input").focus(function(){
+						$(this).css("color", "red");
+					});
+
+					$("input").focusout(function(){
+						$(this).css("color", "blue");
+					});
+				});
+			</script>
+			<form>
+				<input type="text" id="texte">
+				<input type="text" id="texte">
+			</form>
+		</body>
+	</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title></title>
+			<script src="../jquery-3.4.1.js"></script>
+		</head>
+		<body>
+			<script>
+
+				$(document).ready(function(){
+
+					$("#b1").click(function () {
+						var b = $("body").text();
+						alert(b);
+					});
+
+					$("#b2").click(function () {
+						var c = $("body").html();
+						alert(c);
+					});
+
+				});	
+
+			</script>
+			<div>
+				<p>aaaa aaaaa aaaa aaaa aaaaa aaaaa</p>
+				<p>bbbb bbbb bbbb bbbb bbbb bbbb</p>
+				<p>ccccc cccc ccc cccc cccc cccc ccc</p>
+			</div>
+			<button type="button" id="b1">Codi de Body</button>
+			<button type="button" id="b2">Codi de Head</button>
+		</body>
+	</html>

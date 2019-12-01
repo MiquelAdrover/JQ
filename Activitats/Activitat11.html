@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title></title>
+			<script src="../jquery-3.4.1.js"></script>
+		</head>
+		<body>
+			<script>
+				$(document).ready(function(){
+
+					$("td").mouseover(function(){
+						$(this).css("background-color", "#ff0");
+					});
+
+					$("td").mouseout(function(){
+						$(this).css("background-color", "#fff");
+					});
+				});	
+			</script>
+			<table border="1">
+				<tr>
+					<td>
+						Pedro Sastre
+					</td>
+					<td>
+						Sexy Salva
+					</td>
+				</tr>
+				<tr>
+					<td>
+						21
+					</td>
+					<td>
+						gay pero sexy
+					</td>
+				</tr>
+			</table>
+		</body>
+	</html>

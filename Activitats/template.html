@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title></title>
+			<script src="../jquery-3.4.1.js"></script>
+			<style type="text/css">
+				img{
+					height: 200px;
+					width: 300px;
+				}
+			</style>
+		</head>
+		<body>
+			<table>
+				<tr>
+					<td>
+						<img src="C:\Users\Maq\Pictures\Fondos\Perfil\kurumi.jpg" id="img">
+					</td>
+					<td>
+						<button type="button" id="button">IMATGE</button>
+					</td>
+				</tr>
+			</table>
+			<script>
+			$(document).ready(function(){
+				var cont=0;
+				
+				$("#button").click(function(){
+					if (cont==1) {
+						$("#img").show(1);
+						cont=cont - 1;
+					}
+					else {
+						$("#img").hide(1);
+						cont=cont + 1;
+					}
+				});
+			});
+			</script>
+		</body>
+</html>

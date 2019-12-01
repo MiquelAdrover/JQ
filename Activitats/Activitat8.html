@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title></title>
+			<script src="../jquery-3.4.1.js"></script>
+			<style type="text/css">
+				.style1 { 
+					background-color:#ffffcc; 
+					font-family:verdana; 
+					font-size:14px; 
+					border-top-width:1px; 
+					border-right-width:3px; 
+					border-bottom-width:3px; 
+					border-left-width:1px; 
+					border-top-style:dotted; 
+					border-right-style:solid; 
+					border-bottom-style:solid; 
+					border-left-style:dotted; 
+					border-top-color:#ffaa00; 
+					border-right-color:#ff0000; 
+					border-bottom-color:#ff0000; 
+					border-left-color:#ffaa00; 
+				}
+				.style2 { 
+					background-color:#ff00cc;  
+					font-size:20px; 
+					border-top-width:3px; 
+					border-right-width:1px; 
+					border-bottom-width:1px; 
+					border-left-width:3px; 
+					border-top-style:solid; 
+					border-right-style:double; 
+					border-bottom-style:dotted; 
+					border-left-style:solid; 
+					border-top-color:#00af0f; 
+					border-right-color:#ff10f0; 
+					border-bottom-color:#00f000; 
+					border-left-color:#afaaa0; 
+				}
+			</style>
+		</head>
+		<body>
+			<script>
+
+				var x, y;
+
+				$(document).ready(function(){
+
+					$("#b1").click(function () {
+						x=$("#cuerpo");
+						y=$("#cabeza");
+						x.addClass("style1");
+						y.addClass("style2");
+					});
+
+					$("#b2").click(function () {
+						x=$("#cuerpo");
+						y=$("#cabeza");
+						x.removeClass("style1");
+						y.removeClass("style2");
+					});
+
+				});	
+
+			</script>
+			<div id="cabeza">
+				<p>aaaa aaaaa aaaa aaaa aaaaa aaaaa</p>
+				<p>bbbb bbbb bbbb bbbb bbbb bbbb</p>
+				<p>ccccc cccc ccc cccc cccc cccc ccc</p>
+			</div>
+			<div id="cuerpo">
+				<p>aaaa aaaaa aaaa aaaa aaaaa aaaaa</p>
+				<p>bbbb bbbb bbbb bbbb bbbb bbbb</p>
+				<p>ccccc cccc ccc cccc cccc cccc ccc</p>
+			</div>
+			<button type="button" id="b1">Vincular</button>
+			<button type="button" id="b2">Desvincular</button>
+		</body>
+	</html>
