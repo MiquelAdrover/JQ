@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Exercici 23</title>
+			<script src="../jquery-3.4.1.js"></script>
+		</head>
+		<body>
+			<a href="http://iesmanacor.cat" target="_blanck">IES Manacor</a>
+		    <a href="https://google.es" target="_blanck">Google</a>
+		    <a href="https://youtube.com" target="_blanck">YouTube</a>
+		    <a href="https://amazon.es" target="_blanck">Amazon</a>
+			<script>
+			$(document).ready(function(){
+				$("a").each(function () {
+			        if ($(this).attr('href').indexOf('.es') > -1)
+			            $(this).css("background", "#ffff99");
+			    });
+			});
+			</script>
+		</body>
+</html>
